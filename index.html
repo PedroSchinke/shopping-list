@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&family=Numans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+
+    <main>
+        <img src="./img/bag.png" alt="sacola de compras">
+        <form>
+            <input id="item-input" class="item-input" type="text" placeholder="Enter the item you want to buy"></input>
+            <button id="add-button" class="item-input">Save</button>
+        </form>
+    
+        <ul id="shopping-list">
+            <h2>Shopping List</h2>
+            <hr />
+            <li>
+                <div class="list-item-container">
+                    <div class="item-name-container">
+                        <div class="checkbox-container">
+                            <label for="checkbox-1">
+                                <input type="checkbox" class="checkbox-input" id="checkbox-1"/>
+                                <div class="custom-checkbox checked"></div>
+                            </label>
+                        </div>
+                        <p>Apple</p>
+                    </div>
+                    <div>
+                        <button class="action-button">
+                            <img src="./img/delete.svg" alt="remover">
+                        </button>
+                        <button class="action-button">
+                            <img src="./img/edit.svg" alt="editar">
+                        </button>
+                    </div>
+                </div>
+                <p class="list-item-text">Monday (2024/10/07) at 08h30</p>
+            </li>
+        </ul>
+    </main>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
