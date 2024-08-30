@@ -21,35 +21,22 @@
             <button id="add-button" class="item-input">Save</button>
         </form>
     
-        <ul id="shopping-list">
+        <div class="list-container">
             <h2>Shopping List</h2>
             <hr />
-            <li>
-                <div class="list-item-container">
-                    <div class="item-name-container">
-                        <div class="checkbox-container">
-                            <label for="checkbox-1">
-                                <input type="checkbox" class="checkbox-input" id="checkbox-1"/>
-                                <div class="custom-checkbox checked"></div>
-                            </label>
-                        </div>
-                        <p>Apple</p>
-                    </div>
-                    <div>
-                        <button class="action-button">
-                            <img src="./img/delete.svg" alt="remover">
-                        </button>
-                        <button class="action-button">
-                            <img src="./img/edit.svg" alt="editar">
-                        </button>
-                    </div>
-                </div>
-                <p class="list-item-text">Monday (2024/10/07) at 08h30</p>
-            </li>
-        </ul>
+            <ul id="shopping-list">
+                <p id="empty-list-message" style="display: block;">Your shopping list is empty!</p>
+            </ul>
+
+            <div id="purchased-list-container" style="display: none;">
+                <h2>Purchased</h2>
+                <hr>
+                <ul id="purchased-item-list"></ul>
+            </div>
+        </div>
     </main>
 
-    <script src="scripts.js"></script>
+    <script src="scripts.js" type="module"></script>
 
 </body>
 
