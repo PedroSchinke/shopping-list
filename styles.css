@@ -33,7 +33,7 @@ main {
     gap: 24px;
 
     width: 440px;
-    padding: 56px;
+    padding: 40px;
 
     align-items: center;
     border-radius: 16px;
@@ -70,6 +70,11 @@ p {
     width: 307px;
 }
 
+#item-input:focus {
+    border: 1px solid var(--primary-color);
+    outline: none;
+}
+
 .input-item::placeholder {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
@@ -78,7 +83,7 @@ p {
 
 #add-button {
     text-align: center;
-    padding: 12px 16px;
+    padding: 8px 16px;
     border-radius: 24px;
     background-color: var(--primary-color);
     color: var(--neutral);
@@ -86,6 +91,7 @@ p {
     font-size: 18px;
     line-height: 24px;
     border: none;
+    cursor: pointer;
 }
 
 form {
@@ -95,10 +101,25 @@ form {
     gap: 8px;
 }
 
+#shopping-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.list-container {
+    width: 100%;
+}
+
+#empty-list-message {
+    text-align: center;
+}
+
 .list-item-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 100%;
 }
 
 .item-name-container {
@@ -113,6 +134,10 @@ ul {
 .list-item-text {
     font-size: 12px;
     line-height: 20px;
+}
+
+.checkbox-container {
+    height: 100%;
 }
 
 .checkbox-input {
@@ -147,7 +172,51 @@ ul {
     transform: rotate(-140deg);
 }
 
+#item-title {
+    margin-left: 2px;
+    margin-bottom: 2px;
+    margin-left: 6px;
+}
+
+#edit-name-input {
+    width: 60%;
+    margin-bottom: 2px;
+    padding-left: 5px;
+    border: 1px solid var(--neutral);
+    border-radius: 10px;
+    font-family: var(--text-font);
+    font-size: 18px;
+}
+
+#edit-name-input:focus {
+    border: 1px solid var(--primary-color);
+    outline: none;
+}
+
+.save-edit-name-button {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    border: none;
+    background-color: var(--neutral);
+    color: #F55B64;
+    font-family: var(--text-font);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.buttons-container {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
 .action-button {
     background-color: transparent;
     border: none;
+}
+
+.action-button img {
+    width: 22px;
+    cursor: pointer;
 }
